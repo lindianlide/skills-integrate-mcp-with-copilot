@@ -57,12 +57,45 @@ section h3 {
   color: #1a237e;
 }
 
+/* 管理员登录表单样式 */
+#admin-login {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#admin-login form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#admin-login .form-group {
+  margin-bottom: 0;
+}
+
+/* 管理员面板样式 */
+#admin-panel {
+  width: 100%;
+  max-width: 800px;
+}
+
+#add-activity {
+  margin-bottom: 20px;
+  background-color: #4CAF50;
+}
+
+#add-activity:hover {
+  background-color: #388E3C;
+}
+
 .activity-card {
   margin-bottom: 15px;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  position: relative;
 }
 
 .activity-card h4 {
@@ -74,7 +107,32 @@ section h3 {
   margin-bottom: 8px;
 }
 
-/* New styles for participants section */
+.activity-actions {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn {
+  background-color: #FFC107;
+  color: #000;
+}
+
+.edit-btn:hover {
+  background-color: #FFB300;
+}
+
+.delete-activity-btn {
+  background-color: #f44336;
+}
+
+.delete-activity-btn:hover {
+  background-color: #e53935;
+}
+
+/* 参与者部分样式 */
 .participants-container {
   margin-top: 15px;
   padding-top: 12px;
@@ -98,11 +156,6 @@ section h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-/* Remove the bullet point pseudo-element */
-.participants-section ul li::before {
-  display: none;
 }
 
 .participant-email {
